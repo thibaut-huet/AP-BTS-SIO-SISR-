@@ -33,7 +33,7 @@ Créer un Active Directory fonctionnel permettant la gestion centralisée des id
 
 ### Ressources utilisées
 
-- **proxmox** (hyperviseur de type 1)
+- **VMware Workstation Player** (hyperviseur de type 2)
 - **ISO Windows Server 2022** (pour le contrôleur de domaine)
 - **ISO Windows 10/11** (pour le poste client test)
 
@@ -52,7 +52,7 @@ Créer un Active Directory fonctionnel permettant la gestion centralisée des id
 
 ### Installation de l'hyperviseur
 
-Utilisation de l'hyperviseur Proxmox sur un serveur physique et d'une VLAN dédiée au travail personnel.  
+Le choix s'est porté sur **VMware Workstation Player** comme hyperviseur de type 2. L'installation s'est déroulée de manière standard sur la machine physique (Dell Latitude 7420, Intel Core i7-11th gen, 16 Go RAM).
 
 ### Création des Machines Virtuelles
 
@@ -63,7 +63,7 @@ Deux machines virtuelles distinctes ont été créées :
 | Système d'exploitation | Windows Server 2022 | Windows 10/11 Pro |
 | Mémoire vive (RAM) | 4 Go | 2 à 4 Go |
 | Processeur (CPU) | 2 vCPU | 1 ou 2 vCPU |
-| Espace disque | 60 Go | 40 Go ou plus |
+| Espace disque | 20 Go | 20 Go ou plus |
 | Type de réseau | NAT | NAT (identique au serveur) |
 
 ![Création et paramétrage de la VM serveur SRV-AD](images/image12.jpg)
@@ -84,7 +84,7 @@ Choisir **Windows Server 2022 Standard (Desktop Experience)** afin de disposer d
 
 ### Partitionnement
 
-Partitionner le disque virtuel de 60 Go et exécuter l'assistant d'installation.
+Partitionner le disque virtuel de 20 Go et exécuter l'assistant d'installation.
 
 ![Partitionnement du disque virtuel](images/image3.jpg)
 
